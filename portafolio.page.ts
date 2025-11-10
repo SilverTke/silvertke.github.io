@@ -9,6 +9,13 @@ export const portfolio = [
     description:
       "Hecho para el desafío de flexbox. Un prototipo de una página informativa sobre iguanas",
   },
+  {
+    name: "Cuppon",
+    figure:
+      `<img src="/assets/img/cuppon.png" alt="Una imagen del proyecto Cuppon">`,
+    description:
+      "Hecho para el desafío de Bootstrap. Una página de venta de productos",
+  },
 ];
 
 export default (data: Lume.Data, filters: Lume.Helpers) => `
@@ -33,12 +40,15 @@ export default (data: Lume.Data, filters: Lume.Helpers) => `
 `).join("\n")
 }
       <div class="card bg-base-200 shadow-sm">
+        <figure>
+          <img src="/assets/img/cv-git.png">
+        </figure>
         <p class="card-title">CV Git</p>
         <div class="card-body">
           <p>Un CV hecho con una plantilla para el desafío de Git</p>
         </div>
         <a href="https://github.com/SilverTke/cv-dela" class="card-footer text-primary hover:underline">Link al repositorio</a>
-    </div>
+      </div>
     </div>
     </main>
 `;
