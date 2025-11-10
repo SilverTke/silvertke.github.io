@@ -12,3 +12,4 @@ hecho con [lume](https://lume.land), [UnoCSS](https://unocss.dev) y [DaisyUI](ht
 - `_data.yml`: Datos para navbar
 - `index.yml`: Página principal
 - `portafolio.page.ts`: Página portafolio
+- `assets`: Archivos estáticos
