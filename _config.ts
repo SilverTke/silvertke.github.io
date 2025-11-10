@@ -34,5 +34,6 @@ site.use(unocss({
 site.add("style.css");
 
 site.add("/assets");
+site.ignore("README.md");
 
 export default site;
