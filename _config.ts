@@ -6,7 +6,7 @@ import { presetIcons } from "unocss/preset-icons/browser";
 const site = lume();
 
 site.use(unocss({
-  reset: "tailwind",
+  reset: false,
   options: {
     presets: [() =>
       presetIcons({
@@ -16,6 +16,9 @@ site.use(unocss({
             import("iconify/noto/icons.json", { with: { type: "json" } }).then((
               i,
             ) => i.default),
+          "fa7-solid": () =>
+            import("iconify/fa7-solid/icons.json", { with: { type: "json" } })
+              .then((i) => i.default),
         },
       }), presetWind4],
     theme: {
@@ -29,5 +32,7 @@ site.use(unocss({
 }));
 
 site.add("style.css");
+
+site.add("/assets");
 
 export default site;
