@@ -1,2 +1,14 @@
 # CV GitHub Pages
-Un CV publicado en GitHub Pages y hecho con [lume](https://lume.land), [UnoCSS](https://unocss.dev) y [DaisyUI](https://daisyui.com)
+
+Un CV publicado en GitHub Pages y
+hecho con [lume](https://lume.land), [UnoCSS](https://unocss.dev) y [DaisyUI](https://daisyui.com)
+
+## Estructura del proyecto
+
+- `_config.ts`: Configuración de Lume
+- `_includes`: Layouts para las páginas
+  - `base.vto`: Layout base (con navbar y estilos)
+  - `home.vto`: Layout página principal
+- `_data.yml`: Datos para navbar
+- `index.yml`: Página principal
+- `portafolio.page.ts`: Página portafolio
