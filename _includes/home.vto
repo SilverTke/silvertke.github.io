@@ -1,10 +1,15 @@
 {{ set content }}
-<header class="hero bg-base-200 min-h-screen">
-  <div class="hero-content text-center max-w-md">
-    <object data="/assets/" type="image/svg+xml"></object>
+<header class="hero bg-base-200 min-h-128">
+  <div class="hero-content flex-col flex text-center"> 
     <h1 class="text-5xl font-bold">{{heading}}</h1>
     <p class="text-4xl font-medium">Programadora experimental<p>
   </div>
 </header>
+{{ for section of sections }}
+ <section id="{{section.id}}" class="pt-4 flex flex-col items-center text-center flex-1">
+  <h1 class="text-4xl font-medium">{{section.title}}</h1>
+  {{section.content}}
+ </section>
+{{ /for }}
 {{ /set }}
 {{ include "./base.vto" }}

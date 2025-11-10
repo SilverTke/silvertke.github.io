@@ -9,9 +9,29 @@
 	</head>
 	<body>
 		<nav class="navbar sticky bg-base-100 shadow-sm top-0">
+      <div class="flex-1 navbar-start"><a class="btn btn-ghost text-xl px-4" href="#">Sofía</a></div>
+      <div class="navbar-end flex-none">
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden p-4">
+        <div class="i-fa7-solid-list text-xl"></div>
+        </div>
+        <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 w-52 z-1 mt-3 p-2 rounded-box">
+        {{ for it of nav_items }}
+          <li><a href="{{it.link}}">{{it.text}}</a></li>
+        {{ /for }}
+        </ul>
+      </div>
+      <div class="hidden lg:flex">
+      <ul class="menu menu-horizontal px-4">
+      {{ for it of nav_items }}
+          <li><a href="{{it.link}}">{{it.text}}</a></li>
+      {{ /for }}
+      </ul>
+      </div>
+      </div>
     </nav>
 		<main>
     {{content}}
-    </main>
+    </main> 
 	</body>
 </html>
