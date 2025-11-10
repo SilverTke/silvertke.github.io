@@ -3,7 +3,8 @@
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.1.1/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.12/jsx-runtime.ts",
     "unocss/preset-wind4": "npm:@unocss/preset-wind4",
-    "unocss/preset-daisy": "https://esm.sh/@ameinhardt/unocss-preset-daisy"
+    "unocss/preset-icons": "npm:@unocss/preset-icons",
+    "iconify/": "https://esm.sh/@iconify-json/"
   },
   "permissions": {
     "lume": {
@@ -22,7 +23,8 @@
         "jsr.io:443",
         "cdn.jsdelivr.net:443",
         "data.jsdelivr.com:443",
-        "registry.npmjs.org:443"
+        "registry.npmjs.org:443",
+        "esm.sh:443"
       ],
       "env": true,
       "run": true,
