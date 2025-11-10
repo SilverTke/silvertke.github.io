@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 		<title>{{ title }}</title>
 	</head>
-	<body>
-		<nav class="navbar sticky bg-base-100 shadow-sm top-0">
+	<body class="flex flex-col min-h-svh">
+		<nav class="navbar sticky bg-base-100 shadow-sm top-0 z-1">
       <div class="flex-1 navbar-start"><a class="btn btn-ghost text-xl px-4" href="/">Sofía</a></div>
       <div class="navbar-end flex-none">
       <div class="dropdown dropdown-end">
@@ -29,7 +29,14 @@
       </ul>
       </div>
       </div>
-    </nav>	
+    </nav>
+    <main class="flex-grow pb-4">
     {{content}}
+    </main>
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+      <aside><div class="flex gap-4 items-center">
+      <div class="i-fa7-solid:copyright"></div><p>{{new Date().getFullYear()}} Sofía Maturana. Todos los derechos reservados</p>
+      </div></aside>
+    </footer>
 	</body>
 </html>
