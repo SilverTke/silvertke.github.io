@@ -1,3 +1,17 @@
 layout: home.vto
 title: El rincón de Sofi
 heading: Sofía Maturana
+sections:
+  - id: aboutMe
+    title: Sobre mí
+    content: |
+      <p class="text-xl">¡Hola! Mi nombre es Sofía y soy una programadora experimental.<br>
+      Todavía no estoy lista para un gran reto, pero puedo manejar proyectos sin muchos problemas.
+      </p>
+  - id: education
+    title: <div class="flex"><div class="i-noto-graduation-cap"></div>Educación</div>
+    content: |
+      <p class="text-xl w-1/3">Estudié en el Colegio Chuquicamata entre 2013 y 2024 (1° Básico a IV° Medio)
+      y actualmente me encuentro "cesante" en lo que a estudios se refiere. Sin embargo, estoy desarrollando
+      un curso de desarrollo full-stack, por el cual hice este sitio
+      </p>
