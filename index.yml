@@ -1,13 +1,19 @@
+# El HTML base está en `_includes/home.vto`
 layout: home.vto
+# Esto va dentro de la carpeta `title`
 title: El rincón de Sofi
+# Esto va en la cabecera
 heading: Sofía Maturana
+# Estas son las secciones del currículum
 sections:
+  # Sección de sobre mí
   - id: aboutMe
     title: Sobre mí
     content: |
       <p class="text-xl">¡Hola! Mi nombre es Sofía y soy una programadora experimental.<br>
       Todavía no estoy lista para un gran reto, pero puedo manejar proyectos sin muchos problemas.
       </p>
+  # Sección de educación
   - id: education
     title: <div class="flex"><div class="i-noto-graduation-cap mr-2"></div>Educación</div>
     content: |
@@ -15,10 +21,12 @@ sections:
       y actualmente me encuentro "cesante" en lo que a estudios se refiere. Sin embargo, estoy desarrollando
       un curso de desarrollo full-stack, por el cual hice este sitio
       </p>
+  # Sección de experiencia
   - id: experience
     title: <div class="flex"><div class="i-noto-briefcase mr-2"></div>Experiencia</div>
     content: |
       <p class="text-xl w-1/3">Llevo más de 8 años programando de forma casual, mas no he hecho un proyecto grande todavía</p>
+  # Sección que contiene link al portafolio
   - id: portfolio
     title: <div class="flex"><div class="i-noto:blue-book mr-2"></div> Portafolio</div>
     content: |

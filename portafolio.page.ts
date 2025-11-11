@@ -1,6 +1,9 @@
+// El archivo `_includes/base.vto` contiene el HTML base. El contenido de este archivo va en la etiqueta `main`
 export const layout = "base.vto";
+// El título de la pestaña del navegador. El contenido de esta variable va en la etiqueta `title`
 export const title = "Portafolio";
 
+// Items del portafolio (excepto el CV)
 export const portfolio = [
   {
     name: "Iguana page",
@@ -18,7 +21,8 @@ export const portfolio = [
   },
 ];
 
-export default (data: Lume.Data, filters: Lume.Helpers) => `
+// Esos argumentos están de relleno jaja, y esa cadena tiene HTML dentro
+export default (_data: Lume.Data, _filters: Lume.Helpers) => `
     <header class="pt-4 mx-5">
       <h1 class="text-4xl font-bold">Portafolio</h1>
     </header>
