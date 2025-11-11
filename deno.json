@@ -10,7 +10,8 @@
     "lume": {
       "read": true,
       "write": [
-        "./"
+        "./",
+        "../prueba-site/"
       ],
       "import": [
         "cdn.jsdelivr.net:443",
