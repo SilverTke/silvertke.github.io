@@ -3,7 +3,7 @@ import unocss from "lume/plugins/unocss.ts";
 import { presetWind4 } from "unocss/preset-wind4";
 import { presetIcons } from "unocss/preset-icons/browser";
 
-const site = lume();
+const site = lume({ dest: "../prueba-site/" });
 
 site.use(unocss({
   reset: false,
