@@ -19,6 +19,12 @@ site.use(unocss({
           "fa7-solid": () =>
             import("iconify/fa7-solid/icons.json", { with: { type: "json" } })
               .then((i) => i.default),
+          "fa7-brands": () =>
+            import("iconify/fa7-brands/icons.json", { with: { type: "json" } })
+              .then((i) => i.default),
+          pajamas: () =>
+            import("iconify/pajamas/icons.json", { with: { type: "json" } })
+              .then((i) => i.default),
         },
       }), presetWind4],
     theme: {

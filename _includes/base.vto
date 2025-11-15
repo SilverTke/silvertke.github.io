@@ -22,12 +22,18 @@
         {{ for it of nav_items }}
           <li><a href="{{it.link}}">{{it.text}}</a></li>
         {{ /for }}
+        {{for lnk of socials}}
+          <li><a href="{{lnk.link}}">{{lnk.name}}</a></li>
+        {{ /for }}
         </ul>
       </div>
       <div class="hidden lg:flex">
       <ul class="menu menu-horizontal px-4">
       {{ for it of nav_items }}
           <li class="px-4"><a href="{{it.link}}">{{it.text}}</a></li>
+      {{ /for }}
+      {{ for lnk of socials }}
+        <li class="px-4 text-xl"><a href="{{lnk.link}}"><div class="i-{{lnk.icon}}"></div></a></li>
       {{ /for }}
       </ul>
       </div>

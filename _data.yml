@@ -4,3 +4,10 @@ nav_items:
     link: "/"
   - text: Portafolio
     link: "/portafolio"
+socials:
+  - name: GitHub
+    icon: fa7-brands-github
+    link: https://github.com/SilverTke
+  - name: Gitea
+    icon: pajamas-gitea
+    link: https://git.silvertke.net
