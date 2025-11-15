@@ -33,6 +33,7 @@ site.use(unocss({
         secondary: "var(--color-secondary)",
         success: "var(--color-success)",
         "base-content": "var(--color-base-content)",
+        "primary-content": "var(--color-primary-content)",
       },
     },
   },

@@ -1,0 +1,12 @@
+<div class="card bg-base-200 shadow-sm">
+  {{if figure}}
+  <figure>
+  {{figure}}
+  </figure>
+  {{/if}}
+  <p class="card-title">{{name}}</p>
+  <div class="card-body"><p>{{description}}</p></div>
+  {{if link}}
+  <a class="btn bg-primary text-primary-content" href="{{link}}">Link al repositorio</a>
+  {{/if}}
+</div>

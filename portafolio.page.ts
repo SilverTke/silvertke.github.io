@@ -19,10 +19,16 @@ export const portfolio = [
     description:
       "Hecho para el desafío de Bootstrap. Una página de venta de productos",
   },
+  {
+    name: "CV Git",
+    figure: `<img src="/assets/img/cv-git.png">`,
+    description: "Un ejemplo de CV administrado por Git",
+    link: "https://github.com/SilverTke/cv-dela",
+  },
 ];
 
 // Esos argumentos están de relleno jaja, y esa cadena tiene HTML dentro
-export default (_data: Lume.Data, _filters: Lume.Helpers) => `
+export default async ({ comp }: Lume.Data, _filters: Lume.Helpers) => `
     <header class="pt-4 mx-5">
       <h1 class="text-4xl font-bold">Portafolio</h1>
     </header>
@@ -30,29 +36,7 @@ export default (_data: Lume.Data, _filters: Lume.Helpers) => `
       <p>Este es mi portafolio con los proyectos que he hecho hasta ahora en el curso
       de desarrollo full-stack</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      ${
-  portfolio.map((it) => `
-      <div class="card bg-base-200 shadow-sm">
-        <figure>
-        ${it.figure}
-        </figure>
-        <p class="card-title">${it.name}</p>
-        <div class="card-body">
-          <p>${it.description}</p>
-        </div>
+        ${(await Promise.all(portfolio.map(comp.project))).join("\n")}
       </div>
-`).join("\n")
-}
-      <div class="card bg-base-200 shadow-sm">
-        <figure>
-          <img src="/assets/img/cv-git.png">
-        </figure>
-        <p class="card-title">CV Git</p>
-        <div class="card-body">
-          <p>Un CV hecho con una plantilla para el desafío de Git</p>
-        </div>
-        <a href="https://github.com/SilverTke/cv-dela" class="card-footer text-primary hover:underline">Link al repositorio</a>
-      </div>
-    </div>
     </main>
 `;
